@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xfd-On-cns">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -33,7 +34,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ZNT-dr-Y0W" kind="show" id="YS5-e9-trp"/>
+                                            <segue destination="qvq-EI-Y6h" kind="show" id="YS5-e9-trp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -81,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="1193" y="311"/>
         </scene>
-        <!--View Controller-->
+        <!--Cap and Gown-->
         <scene sceneID="AFA-Vh-qhc">
             <objects>
                 <viewController storyboardIdentifier="CapCont" id="ZNT-dr-Y0W" sceneMemberID="viewController">
@@ -93,19 +94,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thats Justice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCe-r9-zXV">
-                                <rect key="frame" x="101" y="135" width="157" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DPd-df-eoa">
+                                <rect key="frame" x="76" y="64" width="447" height="536"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DPd-df-eoa" secondAttribute="height" multiplier="447:536" id="Gr9-8M-PbB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="DPd-df-eoa" secondAttribute="centerY" constant="-32" id="3NP-9U-XDA"/>
+                            <constraint firstItem="DPd-df-eoa" firstAttribute="top" secondItem="sd6-SR-8wZ" secondAttribute="bottom" priority="750" id="7U6-1i-KgT"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="DPd-df-eoa" secondAttribute="trailing" constant="2" id="QP9-Bl-OCn"/>
+                            <constraint firstItem="pHL-Mb-els" firstAttribute="top" secondItem="DPd-df-eoa" secondAttribute="bottom" priority="750" id="cx8-yI-WAO"/>
+                            <constraint firstAttribute="centerX" secondItem="DPd-df-eoa" secondAttribute="centerX" id="oVy-Hj-o6c"/>
+                            <constraint firstItem="DPd-df-eoa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eKi-dN-rmJ" secondAttribute="leadingMargin" constant="2" id="yrB-Rt-X26"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cap and Gown" id="a9T-Yr-FWW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TBq-H1-GSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="89"/>
+            <point key="canvasLocation" x="2712" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="edw-OZ-dTR">
@@ -125,5 +135,26 @@
             </objects>
             <point key="canvasLocation" x="397" y="311"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Sa-Mx-O2v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qvq-EI-Y6h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9VH-9A-c0h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZNT-dr-Y0W" kind="relationship" relationship="rootViewController" id="W1s-r3-FKh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5r-yQ-qWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="89"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="CapIcon" width="207" height="244"/>
+    </resources>
 </document>
