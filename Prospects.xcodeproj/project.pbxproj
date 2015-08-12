@@ -14,6 +14,7 @@
 		04C10C451B79C214009DA1C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C10C441B79C214009DA1C4 /* Images.xcassets */; };
 		04C10C481B79C214009DA1C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C10C461B79C214009DA1C4 /* LaunchScreen.xib */; };
 		04C10C541B79C214009DA1C4 /* ProspectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C10C531B79C214009DA1C4 /* ProspectsTests.m */; };
+		04E8E3C51B7B27EE00AF9DBB /* ClubsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8E3C41B7B27EE00AF9DBB /* ClubsList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		04C10C4D1B79C214009DA1C4 /* ProspectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProspectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C10C521B79C214009DA1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C10C531B79C214009DA1C4 /* ProspectsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProspectsTests.m; sourceTree = "<group>"; };
+		04E8E3C31B7B27EE00AF9DBB /* ClubsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClubsList.h; sourceTree = "<group>"; };
+		04E8E3C41B7B27EE00AF9DBB /* ClubsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClubsList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				04C10C3E1B79C214009DA1C4 /* ViewController.h */,
 				04C10C3F1B79C214009DA1C4 /* ViewController.m */,
 				04C10C411B79C214009DA1C4 /* Main.storyboard */,
+				04E8E3C31B7B27EE00AF9DBB /* ClubsList.h */,
+				04E8E3C41B7B27EE00AF9DBB /* ClubsList.m */,
 				04C10C441B79C214009DA1C4 /* Images.xcassets */,
 				04C10C461B79C214009DA1C4 /* LaunchScreen.xib */,
 				04C10C371B79C214009DA1C4 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				04C10C401B79C214009DA1C4 /* ViewController.m in Sources */,
 				04C10C3D1B79C214009DA1C4 /* AppDelegate.m in Sources */,
 				04C10C3A1B79C214009DA1C4 /* main.m in Sources */,
+				04E8E3C51B7B27EE00AF9DBB /* ClubsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +424,7 @@
 				04C10C591B79C214009DA1C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04C10C5A1B79C214009DA1C4 /* Build configuration list for PBXNativeTarget "ProspectsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				04C10C5C1B79C214009DA1C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
