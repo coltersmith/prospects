@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SetClubInfo : UIViewController
+@interface SetClubInfo : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @end
