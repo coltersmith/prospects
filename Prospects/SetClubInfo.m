@@ -7,7 +7,7 @@
 //
 
 #import "SetClubInfo.h"
-
+#import <Parse/Parse.h>
 @interface SetClubInfo ()
 {
     NSArray *_clubPickerData;
@@ -28,6 +28,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    // Parse testing code:
+    
+    PFObject *anObject = [PFObject objectWithClassName:@"AnObject"];
+    anObject[@"categorybigman"] = @"Colter DeLuca";
+    [anObject saveInBackground];
+    
+    
+    //
+    
+    
     self.secondPanel.hidden = YES;
     self.thirdPanel.hidden = YES;
     
