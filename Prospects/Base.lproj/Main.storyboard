@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xfd-On-cns">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xfd-On-cns">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -279,7 +279,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QJM-mR-1fd">
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="3BO-P8-ell"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="3BO-P8-ell">
+                            <connections>
+                                <action selector="SendInfo:" destination="44B-Vg-IVR" id="Mux-hT-blh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="clubOnPicker" destination="rSg-yh-Fvp" id="nPo-ba-WVi"/>

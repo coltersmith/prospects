@@ -24,6 +24,9 @@
     [Parse enableLocalDatastore];
     
     // Initialize Parse.
+    //Note that the clientKey
+    // is what sends it to my parse acct.
+    // we could change this to yours, Colt
     [Parse setApplicationId:@"HRQAVuMdmpnqWeo2DO9CVktUGJcKe8x2O70tIyjt"
                   clientKey:@"HM6EFQ5lWcOE6oYkiukgWfh02lkr8DmRMsPNc0H6"];
     

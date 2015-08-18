@@ -31,6 +31,8 @@
     
     
     
+    
+    /*
     // Parse testing code:
     
     PFObject *anObject = [PFObject objectWithClassName:@"AnObject"];
@@ -39,7 +41,7 @@
     
     
     //
-    
+    */
     
     self.secondPanel.hidden = YES;
     self.thirdPanel.hidden = YES;
@@ -106,6 +108,23 @@
     }
 }
 
+//The Parse stuff [basically how to send data]
+
+- (IBAction)SendInfo:(id)sender {
+    
+    
+    PFObject *clubInfo = [PFObject objectWithClassName:@"ClubInfo"];
+    clubInfo[@"clubName"] = @"Cap";
+    clubInfo[@"whatItsOn"] = @"Pass";
+    clubInfo[@"whenOpen"] = @"Now";
+    clubInfo[@"passDescription"] = @"Yellow";
+    clubInfo[@"theme"] = @"None";
+    
+    [clubInfo saveInBackground];
+    
+    // saving in background sends to parse cloud
+    
+}
 
 
 /*
